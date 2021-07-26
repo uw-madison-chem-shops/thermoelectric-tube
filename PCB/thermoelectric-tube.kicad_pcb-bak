@@ -12,8 +12,8 @@
   (page USLetter)
   (title_block
     (title "Thermoelectric Tube")
-    (date 2019-08-13)
-    (rev 1.0.0)
+    (date 2019-08-14)
+    (rev 1.1.0)
     (company UW-Madison)
     (comment 1 "Department of Chemistry")
     (comment 2 "Blaise Thompson")

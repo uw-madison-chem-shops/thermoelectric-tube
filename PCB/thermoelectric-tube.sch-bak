@@ -1,18 +1,17 @@
 EESchema Schematic File Version 4
-LIBS:thermoelectric-tube-cache
 EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Thermoelectric Tube"
-Date "2019-08-13"
-Rev "1.0.0"
+Date "2021-07-26"
+Rev "B"
 Comp "UW-Madison"
 Comment1 "Department of Chemistry"
-Comment2 "Blaise Thompson"
-Comment3 "bthompson@chem.wisc.edu"
-Comment4 ""
+Comment2 "Instrument Shop"
+Comment3 "Blaise Thompson"
+Comment4 "blaise.thompson@wisc.edu"
 $EndDescr
 $Comp
 L Connector:Barrel_Jack J1

@@ -1,18 +1,17 @@
 EESchema Schematic File Version 4
-LIBS:thermoelectric-tube-cache
 EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Thermoelectric Tube"
-Date "2019-08-14"
-Rev "1.1.0"
+Date "2021-07-26"
+Rev "B"
 Comp "UW-Madison"
 Comment1 "Department of Chemistry"
-Comment2 "Blaise Thompson"
-Comment3 "bthompson@chem.wisc.edu"
-Comment4 ""
+Comment2 "Instrument Shop"
+Comment3 "Blaise Thompson"
+Comment4 "blaise.thompson@wisc.edu"
 $EndDescr
 $Comp
 L Connector:Barrel_Jack J1
@@ -632,4 +631,70 @@ Wire Wire Line
 	7350 3350 7350 3650
 Wire Wire Line
 	7350 4050 7350 4600
+$Comp
+L Motor:Fan M?
+U 1 1 60FF5EEF
+P 1500 5800
+F 0 "M?" H 1658 5896 50  0000 L CNN
+F 1 "Fan" H 1658 5805 50  0000 L CNN
+F 2 "" H 1500 5810 50  0001 C CNN
+F 3 "~" H 1500 5810 50  0001 C CNN
+	1    1500 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Fan M?
+U 1 1 60FF71DB
+P 2500 5800
+F 0 "M?" H 2658 5896 50  0000 L CNN
+F 1 "Fan" H 2658 5805 50  0000 L CNN
+F 2 "" H 2500 5810 50  0001 C CNN
+F 3 "~" H 2500 5810 50  0001 C CNN
+	1    2500 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60FF7A6C
+P 1500 6000
+F 0 "#PWR?" H 1500 5750 50  0001 C CNN
+F 1 "GND" H 1505 5827 50  0000 C CNN
+F 2 "" H 1500 6000 50  0001 C CNN
+F 3 "" H 1500 6000 50  0001 C CNN
+	1    1500 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60FF7D4D
+P 2500 6000
+F 0 "#PWR?" H 2500 5750 50  0001 C CNN
+F 1 "GND" H 2505 5827 50  0000 C CNN
+F 2 "" H 2500 6000 50  0001 C CNN
+F 3 "" H 2500 6000 50  0001 C CNN
+	1    2500 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 60FF83E8
+P 1500 5500
+F 0 "#PWR?" H 1500 5350 50  0001 C CNN
+F 1 "+12V" H 1515 5673 50  0000 C CNN
+F 2 "" H 1500 5500 50  0001 C CNN
+F 3 "" H 1500 5500 50  0001 C CNN
+	1    1500 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 60FF8708
+P 2500 5500
+F 0 "#PWR?" H 2500 5350 50  0001 C CNN
+F 1 "+12V" H 2515 5673 50  0000 C CNN
+F 2 "" H 2500 5500 50  0001 C CNN
+F 3 "" H 2500 5500 50  0001 C CNN
+	1    2500 5500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
