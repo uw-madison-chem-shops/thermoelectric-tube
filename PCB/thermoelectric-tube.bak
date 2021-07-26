@@ -1,0 +1,224 @@
+EESchema Schematic File Version 4
+LIBS:thermoelectric-tube-cache
+EELAYER 30 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "Thermoelectric Tube"
+Date "2019-07-24"
+Rev "A"
+Comp "UW-Madison"
+Comment1 "Department of Chemistry"
+Comment2 "Blaise Thompson"
+Comment3 "bthompson@chem.wisc.edu"
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Barrel_Jack J?
+U 1 1 5D38B6A0
+P 1900 3000
+F 0 "J?" H 1957 3325 50  0000 C CNN
+F 1 "Barrel_Jack" H 1957 3234 50  0000 C CNN
+F 2 "" H 1950 2960 50  0001 C CNN
+F 3 "~" H 1950 2960 50  0001 C CNN
+	1    1900 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L arduino:Arduino_Micro_Socket XA?
+U 1 1 5D4CBBC9
+P 5300 2900
+F 0 "XA?" H 5300 4137 60  0000 C CNN
+F 1 "Arduino_Micro_Socket" H 5300 4031 60  0000 C CNN
+F 2 "" H 7100 6650 60  0001 C CNN
+F 3 "https://store.arduino.cc/arduino-micro" H 7100 6650 60  0001 C CNN
+	1    5300 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L IRF630:IRF630 Q??
+U 1 1 5D4CE66D
+P 7800 5000
+F 0 "Q??" H 7906 4954 50  0000 L CNN
+F 1 "IRF630" H 7906 5045 50  0000 L CNN
+F 2 "" H 7550 4850 50  0001 C CNN
+F 3 "" H 7550 4850 50  0001 C CNN
+	1    7800 5000
+	1    0    0    1   
+$EndComp
+$Comp
+L IRF9630:IRF9630 Q??
+U 1 1 5D4CE985
+P 7800 3500
+F 0 "Q??" H 7906 3546 50  0000 L CNN
+F 1 "IRF9630" H 7906 3455 50  0000 L CNN
+F 2 "" H 7550 3350 50  0001 C CNN
+F 3 "" H 7550 3350 50  0001 C CNN
+	1    7800 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L IRF9630:IRF9630 Q?
+U 1 1 5D4E9058
+P 9200 3500
+F 0 "Q?" H 9305 3454 50  0000 L CNN
+F 1 "IRF9630" H 9305 3545 50  0000 L CNN
+F 2 "" H 8950 3350 50  0001 C CNN
+F 3 "" H 8950 3350 50  0001 C CNN
+	1    9200 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Peltier_Element PE?
+U 1 1 5D4E9D1C
+P 8500 4250
+F 0 "PE?" H 8500 4492 50  0000 C CNN
+F 1 "Peltier_Element" H 8500 4401 50  0000 C CNN
+F 2 "" H 8500 4180 50  0001 C CNN
+F 3 "~" V 8500 4275 50  0001 C CNN
+	1    8500 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5D4F2042
+P 7500 5250
+F 0 "R?" H 7432 5204 50  0000 R CNN
+F 1 "R_US" H 7432 5295 50  0000 R CNN
+F 2 "" V 7540 5240 50  0001 C CNN
+F 3 "~" H 7500 5250 50  0001 C CNN
+	1    7500 5250
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5D4F2CC9
+P 9500 5250
+F 0 "R?" H 9432 5296 50  0000 R CNN
+F 1 "R_US" H 9432 5205 50  0000 R CNN
+F 2 "" V 9540 5240 50  0001 C CNN
+F 3 "~" H 9500 5250 50  0001 C CNN
+	1    9500 5250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L IRF630:IRF630 Q?
+U 1 1 5D4E5549
+P 9200 5000
+F 0 "Q?" H 9306 5046 50  0000 L CNN
+F 1 "IRF630" H 9306 4955 50  0000 L CNN
+F 2 "" H 8950 4850 50  0001 C CNN
+F 3 "" H 8950 4850 50  0001 C CNN
+	1    9200 5000
+	-1   0    0    -1  
+$EndComp
+Connection ~ 9500 5000
+Wire Wire Line
+	7500 3500 7500 4250
+Wire Wire Line
+	9500 3500 9500 4250
+Wire Wire Line
+	9200 3000 9200 3300
+Wire Wire Line
+	7800 3000 7800 3300
+Wire Wire Line
+	7800 3700 7800 4250
+Wire Wire Line
+	9200 3700 9200 4250
+Wire Wire Line
+	7800 4250 8300 4250
+Connection ~ 7800 4250
+Wire Wire Line
+	7800 4250 7800 4800
+Wire Wire Line
+	8700 4250 9200 4250
+Connection ~ 9200 4250
+Wire Wire Line
+	9200 4250 9200 4800
+Wire Wire Line
+	7800 5200 7800 5500
+Wire Wire Line
+	7800 5500 8500 5500
+Wire Wire Line
+	9200 5500 9200 5200
+$Comp
+L power:GND #PWR?
+U 1 1 5D4F9544
+P 8500 5500
+F 0 "#PWR?" H 8500 5250 50  0001 C CNN
+F 1 "GND" H 8505 5327 50  0000 C CNN
+F 2 "" H 8500 5500 50  0001 C CNN
+F 3 "" H 8500 5500 50  0001 C CNN
+	1    8500 5500
+	1    0    0    -1  
+$EndComp
+Connection ~ 8500 5500
+Wire Wire Line
+	8500 5500 9200 5500
+$Comp
+L power:GND #PWR?
+U 1 1 5D4FDB7A
+P 9500 5500
+F 0 "#PWR?" H 9500 5250 50  0001 C CNN
+F 1 "GND" H 9505 5327 50  0000 C CNN
+F 2 "" H 9500 5500 50  0001 C CNN
+F 3 "" H 9500 5500 50  0001 C CNN
+	1    9500 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D4FDEF0
+P 7500 5500
+F 0 "#PWR?" H 7500 5250 50  0001 C CNN
+F 1 "GND" H 7505 5327 50  0000 C CNN
+F 2 "" H 7500 5500 50  0001 C CNN
+F 3 "" H 7500 5500 50  0001 C CNN
+	1    7500 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 5100 9500 5000
+Wire Wire Line
+	9500 5400 9500 5500
+Wire Wire Line
+	7500 5000 7500 5100
+Connection ~ 7500 5000
+Wire Wire Line
+	7500 5400 7500 5500
+Wire Wire Line
+	7500 4250 7000 4250
+Wire Wire Line
+	7000 4250 7000 2500
+Wire Wire Line
+	7000 2500 6600 2500
+Connection ~ 7500 4250
+Wire Wire Line
+	7500 4250 7500 5000
+Wire Wire Line
+	6600 2400 10000 2400
+Wire Wire Line
+	10000 2400 10000 4250
+Wire Wire Line
+	10000 4250 9500 4250
+Connection ~ 9500 4250
+Wire Wire Line
+	9500 4250 9500 5000
+Wire Wire Line
+	7800 3000 8500 3000
+$Comp
+L power:+12V #PWR?
+U 1 1 5D508737
+P 8500 3000
+F 0 "#PWR?" H 8500 2850 50  0001 C CNN
+F 1 "+12V" H 8515 3173 50  0000 C CNN
+F 2 "" H 8500 3000 50  0001 C CNN
+F 3 "" H 8500 3000 50  0001 C CNN
+	1    8500 3000
+	1    0    0    -1  
+$EndComp
+Connection ~ 8500 3000
+Wire Wire Line
+	8500 3000 9200 3000
+$EndSCHEMATC
