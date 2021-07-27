@@ -3,7 +3,7 @@
 A small project for students to put together as a learning exercise.
 Involves machining, glass blowing, and electronics work.
 
-![WPP photo](./coverart.png)
+![photo](./coverart.jpg)
 
 ## Repository
 
