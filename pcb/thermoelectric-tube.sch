@@ -63,7 +63,7 @@ U 1 1 5D4E9D1C
 P 8050 4600
 F 0 "PE1" H 8050 4842 50  0000 C CNN
 F 1 "Peltier_Element" H 8050 4751 50  0000 C CNN
-F 2 "Connector_Wire:SolderWirePad_1x02_P5.08mm_Drill1.5mm" H 8050 4530 50  0001 C CNN
+F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5566-02A_2x01_P4.20mm_Vertical" H 8050 4530 50  0001 C CNN
 F 3 "~" V 8050 4625 50  0001 C CNN
 	1    8050 4600
 	1    0    0    -1  
@@ -258,7 +258,7 @@ U 1 1 5D527EF6
 P 1600 900
 F 0 "TC1" V 1527 756 50  0000 R CNN
 F 1 "Thermocouple" V 1618 756 50  0000 R CNN
-F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5566-02A_2x01_P4.20mm_Vertical" H 1025 950 50  0001 C CNN
+F 2 "Connector_Wire:SolderWire-2sqmm_1x02_P7.8mm_D2mm_OD3.9mm" H 1025 950 50  0001 C CNN
 F 3 "~" H 1025 950 50  0001 C CNN
 	1    1600 900 
 	0    -1   1    0   

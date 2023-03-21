@@ -1,7 +1,6 @@
 (sym_lib_table
-  (lib (name arduino)(type Legacy)(uri ${KIPRJMOD}/arduino-kicad-library/arduino.lib)(options "")(descr ""))
-  (lib (name IRF9630)(type Legacy)(uri ${KIPRJMOD}/IRF9630.lib)(options "")(descr ""))
-  (lib (name IRF630)(type Legacy)(uri ${KIPRJMOD}/IRF630.lib)(options "")(descr ""))
-  (lib (name symbols)(type Legacy)(uri ${KIPRJMOD}/symbols.lib)(options "")(descr ""))
-  (lib (name AD595AQ)(type Legacy)(uri ${KIPRJMOD}/AD595AQ.lib)(options "")(descr ""))
+  (lib (name "VXO7805-500-M")(type "Legacy")(uri "${KIPRJMOD}/symbols/VXO7805-500-M.lib")(options "")(descr ""))
+  (lib (name "AD595AQ")(type "Legacy")(uri "${KIPRJMOD}/symbols/AD595AQ.lib")(options "")(descr ""))
+  (lib (name "IRF630")(type "Legacy")(uri "${KIPRJMOD}/symbols/IRF630.lib")(options "")(descr ""))
+  (lib (name "IRF9630")(type "Legacy")(uri "${KIPRJMOD}/symbols/IRF9630.lib")(options "")(descr ""))
 )
